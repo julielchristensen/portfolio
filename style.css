@@ -105,7 +105,7 @@ a {
 }
 
 #planet1_sprite {
-    background-image: url(gronplanet.svg);
+    background-image: url(Forside_elementer/gronplanet.svg);
     background-size: cover;
     width: 9vw;
     height: 9vw;
@@ -118,7 +118,7 @@ a {
 }
 
 #planet2_sprite {
-    background-image: url(orangeplanet.svg);
+    background-image: url(Forside_elementer/orangeplanet.svg);
     background-size: cover;
     width: 6vw;
     height: 6vw;
@@ -131,7 +131,7 @@ a {
 }
 
 #stjerne_sprite {
-    background-image: url(stjerne.svg);
+    background-image: url(Forside_elementer/stjerne.svg);
     background-size: cover;
     width: 2vw;
     height: 2vw;
@@ -144,7 +144,7 @@ a {
 }
 
 #stjerne2_sprite {
-    background-image: url(stjerne.svg);
+    background-image: url(Forside_elementer/stjerne.svg);
     background-size: cover;
     width: 2vw;
     height: 2vw;
@@ -157,7 +157,7 @@ a {
 }
 
 #draabe_sprite {
-    background-image: url(draabe.svg);
+    background-image: url(Forside_elementer/draabe.svg);
     background-size: cover;
     width: 2vw;
     height: 2vw;
