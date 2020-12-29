@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill: #e1deff;
+        mix-blend-mode: soft-light;
+      }
+    </style>
+  </defs>
+  <g class="cls-1">
+    <g id="Baggrund">
+      <path class="cls-2" d="M6.19,23.94a3.63,3.63,0,0,1-5.13-5.13C2.48,17.39,25,0,25,0S7.61,22.52,6.19,23.94Z"/>
+    </g>
+  </g>
+</svg>
