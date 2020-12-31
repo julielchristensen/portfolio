@@ -1,0 +1,32 @@
+h2 {
+    font-family: 'Josefin Sans';
+    font-size: 5rem;
+    color: #FFE687;
+    text-align: center;
+    margin-block-start: 0.0rem;
+}
+
+/* Navigation */
+
+nav {
+    /*    margin: 20px;*/
+    padding: 16px;
+    padding-left: 200px;
+}
+
+.menuItems {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin: 21px;
+    font-family: 'Jura';
+}
+
+a {
+    text-decoration: none;
+    color: #051A61;
+    font-size: 17px;
+    text-transform: uppercase;
+}
