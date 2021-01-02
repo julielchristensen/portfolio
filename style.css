@@ -62,7 +62,6 @@ main {
     align-items: center;
     position: relative;
     min-height: 100vh;
-    background: rgb(53, 24, 209);
     background: radial-gradient(circle, rgba(53, 24, 209, 0.6881127450980392) 0%, rgba(255, 255, 255, 1) 77%);
 }
 
