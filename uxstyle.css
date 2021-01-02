@@ -39,12 +39,12 @@ a {
     text-transform: uppercase;
 }
 
+/* UX*/
+
 #firstux_section {
     font-family: 'Jura';
     text-align: center;
 }
-
-/*billedgalleri*/
 
 #secondux_section {
     display: grid;
@@ -59,4 +59,19 @@ a {
     grid-template-columns: 2fr 2fr 2fr 2fr;
     margin: 3rem;
     grid-gap: 2rem;
+}
+
+/*Animation*/
+
+#firstani_section {
+    font-family: 'Jura';
+    text-align: center;
+}
+
+#secondani_section {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr 2fr;
+    padding-top: 20px;
+    margin: 4rem;
 }
