@@ -1,16 +1,13 @@
 * {
-    margin: 0;
+    margin: 0px;
+}
+
+img {
+    width: 100%
 }
 
 /*landingpage*/
 
-#first_section a {
-    text-decoration: none;
-    color: #FFE687;
-    font-family: 'Josefin Sans';
-    cursor: pointer;
-    font-size: 5rem;
-}
 
 article {
     font-family: 'Jura';
@@ -20,126 +17,165 @@ article {
 
 h1 {
     font-family: 'Josefin Sans';
-    font-size: 5rem;
-    color: #051A61;
+    font-size: 2rem;
+    color: #d158c3;
     text-align: center;
+    z-index: 2;
 }
 
 p {
-    color: #E2BDEF;
+    color: white;
+    margin: 70px;
 }
 
-#first_section {
+#first_sectionlanding a {
+    text-decoration: none;
+    color: #FFE687;
+    text-align: center;
+    font-family: 'Josefin Sans';
+    cursor: pointer;
+    font-size: 4rem;
+}
+
+#first_sectionlanding {
     width: 100%;
     height: 100vh;
-    background-image: url(baggrund-100.jpg);
+    background-image: url(baggrund2.jpg);
     background-size: cover;
     background-position: center;
     background-size: cover;
     max-width: none;
-    background-position: 30% 10%;
+    background-position: 50% 10%;
 }
 
-#first_section {
+#first_sectionlanding {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     grid-template-rows: 1fr auto 1fr;
 }
 
-#first_section div {
+#first_sectionlanding div {
     grid-column: 2/3;
     grid-row: 2/3;
     padding: 2rem;
     text-align: center;
 }
 
-/*forside*/
+/* forside*/
 
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    min-height: 100vh;
-    background: radial-gradient(circle, rgba(53, 24, 209, 0.6881127450980392) 0%, rgba(255, 255, 255, 1) 77%);
-}
-
-#forside {
-    color: white;
+/* Navigation */
+nav {
+    position: absolute;
     text-align: center;
 }
 
-/* Navigation */
-
-nav {
-    /*    margin: 20px;*/
-    padding: 16px;
-}
-
-.menuItems {
-    list-style: none;
-    display: flex;
+.hidden {
+    opacity: 0;
+    transform: translateY(0px);
 }
 
 li {
-    margin: 20px;
-    font-family: 'Jura';
+    list-style: none;
+    padding: 2vh;
+    margin: 30px;
 }
 
-a {
-    text-decoration: none;
-    color: #051A61;
-    font-size: 17px;
-    font-weight: 400;
-    text-transform: uppercase;
+nav ul {
+    z-index: 1;
+    padding-left: 0;
+}
+
+nav a {
+    font-size: 1rem;
+    padding: 1rem;
+    font-family: 'Jura';
+    border-right-style: none;
+    color: white;
+}
+
+#menuItems {
+    transition: transform 0.3s;
+}
+
+#menuknap {
+    cursor: pointer;
+    padding-top: 60px;
+    padding-left: 85vw;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 40px;
+    height: 2px;
+    background-color: white;
+    margin: 10px;
+    transition: 0.4s;
+}
+
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
 }
 
 /*elementer*/
 
 #planet1_container {
     position: absolute;
-    top: 4vw;
-    left: 4vw;
+    top: 7vw;
+    left: 7vw;
 }
 
 #planet1_sprite {
     background-image: url(Forside_elementer/gronplanet.svg);
     background-size: cover;
-    width: 9vw;
-    height: 9vw;
+    width: 20vw;
+    height: 20vw;
 }
 
 #planet2_container {
     position: absolute;
-    top: 32vw;
+    top: 84vw;
     left: 82vw;
 }
 
 #planet2_sprite {
     background-image: url(Forside_elementer/orangeplanet.svg);
     background-size: cover;
-    width: 6vw;
-    height: 6vw;
+    width: 15vw;
+    height: 15vw;
 }
 
 #stjerne_container {
     position: absolute;
-    top: 14vw;
+    top: 44vw;
     left: 74vw;
 }
 
 #stjerne_sprite {
     background-image: url(Forside_elementer/stjerne.svg);
     background-size: cover;
-    width: 2vw;
-    height: 2vw;
+    width: 4vw;
+    height: 4vw;
 }
 
 #stjerne2_container {
     position: absolute;
-    top: 40vw;
-    left: 28vw;
+    top: 107vw;
+    left: 15vw;
 }
 
 #stjerne2_sprite {
@@ -151,8 +187,8 @@ a {
 
 #draabe_container {
     position: absolute;
-    top: 37vw;
-    left: 31vw;
+    top: 104vw;
+    left: 18vw;
 }
 
 #draabe_sprite {
@@ -161,3 +197,155 @@ a {
     width: 2vw;
     height: 2vw;
 }
+
+h2 {
+    font-family: 'Josefin Sans';
+    font-size: 3rem;
+    color: #242B26;
+    text-align: center;
+    padding-top: 90px;
+}
+
+#secondsection_julie {
+    background: #708776;
+}
+
+#secondsection_julie .section_wrapper {
+    display: grid;
+    grid-template-rows: 2fr 2fr;
+    /*    grid-gap: 2rem;*/
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+@media (min-width:600px) {
+
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    /*forside*/
+
+    #forside {
+        color: white;
+        text-align: center;
+    }
+
+    /*elementer*/
+
+    #planet1_container {
+        position: absolute;
+        top: 4vw;
+        left: 4vw;
+    }
+
+    #planet1_sprite {
+        background-image: url(Forside_elementer/gronplanet.svg);
+        background-size: cover;
+        width: 9vw;
+        height: 9vw;
+    }
+
+    #planet2_container {
+        position: absolute;
+        top: 32vw;
+        left: 82vw;
+    }
+
+    #planet2_sprite {
+        background-image: url(Forside_elementer/orangeplanet.svg);
+        background-size: cover;
+        width: 6vw;
+        height: 6vw;
+    }
+
+    #stjerne_container {
+        position: absolute;
+        top: 14vw;
+        left: 74vw;
+    }
+
+    #stjerne_sprite {
+        background-image: url(Forside_elementer/stjerne.svg);
+        background-size: cover;
+        width: 2vw;
+        height: 2vw;
+    }
+
+    #stjerne2_container {
+        position: absolute;
+        top: 13vw;
+        left: 28vw;
+    }
+
+    #stjerne2_sprite {
+        background-image: url(Forside_elementer/stjerne.svg);
+        background-size: cover;
+        width: 2vw;
+        height: 2vw;
+    }
+
+    #draabe_container {
+        position: absolute;
+        top: 48vw;
+        left: 21vw;
+    }
+
+    #draabe_sprite {
+        background-image: url(Forside_elementer/draabe.svg);
+        background-size: cover;
+        width: 2vw;
+        height: 2vw;
+    }
+
+    nav {
+        margin: 20px;
+        padding-left: 50px;
+    }
+
+    #menuknap {
+        display: none;
+    }
+
+    #menuItems {
+        list-style: none;
+        display: flex;
+    }
+
+    #menuItems.hidden {
+        opacity: 1;
+
+    }
+
+    li {
+        margin: 20px;
+        font-family: 'Jura';
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 17px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    #secondsection_julie {
+        background: #708776;
+    }
+
+    #secondsection_julie .section_wrapper {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        /*    grid-gap: 2rem;*/
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+}
+
+/*
+nav a:hover {
+    color: #E3C6B8;
+}
+*/

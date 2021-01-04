@@ -11,9 +11,25 @@
 </head>
 
 <body>
-    <div id="first_section">
+    <header>
+        <nav>
+            <div id="menuknap" onclick="burgerMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul id="menuItems" class="hidden" onclick="zIndex()">
+                <li><a href="om_mig.html" data-item='Contact'>Om Julie</a></li>
+                <li><a href="about.html" data-item='About'>Grundlæggende web</a></li>
+                <li><a href="UX.html" data-item='Projects'>UX</a></li>
+                <li><a href="animation.html" data-item='Blog'>Animation</a></li>
+                <li><a href="indhold.html" data-item='Blog'>Grundlæggende indhold</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="first_sectionlanding">
         <div class="section_wrapper">
-            <article><a href="forside.html">ENTER PORTFOLIO</a></article>
+            <h1><a href="forside.html">ENTER PORTFOLIO</a></h1>
             <article>Julie Lykke Christensen</article>
         </div>
     </div>
