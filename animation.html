@@ -5,21 +5,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>animation</title>
-    <link rel="stylesheet" href="uxstyle.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Antic&family=Josefin+Sans&family=Jura:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <nav>
-            <ul class="menuItems">
-                <li><a href="forside.html" data-item='Home'>Forside</a></li>
-                <li><a href="about.html" data-item='About'>Grundlæggende web</a></li>
-                <li><a href="UX.html" data-item='UX'>UX</a></li>
-                <li><a href="animation.html" data-item='Blog'>Animation</a></li>
-                <li><a href="indhold.html" data-item='Blog'>Grundlæggende indhold</a></li>
-                <li><a href="om_os.html" data-item='Contact'>Om Julie</a></li>
+            <div id="menuknap" onclick="burgerMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul id="menuItems" class="hidden" onclick="zIndex()">
+                <li><a href="index.html">Landingpage</a></li>
+                <li><a href="about.html">Grundlæggende web</a></li>
+                <li><a href="UX.html">UX</a></li>
+                <li><a href="animation.html">Animation</a></li>
+                <li><a href="gi.html">Grundlæggende indhold</a></li>
+                <li><a href="om_os.html">Om Julie</a></li>
             </ul>
         </nav>
     </header>

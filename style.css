@@ -90,7 +90,7 @@ nav a {
     padding: 1rem;
     font-family: 'Jura';
     border-right-style: none;
-    color: white;
+    color: black;
 }
 
 #menuItems {
@@ -325,7 +325,7 @@ h2 {
 
     a {
         text-decoration: none;
-        color: white;
+        color: black;
         font-size: 17px;
         font-weight: 400;
         text-transform: uppercase;
@@ -342,6 +342,45 @@ h2 {
         padding-top: 80px;
         padding-bottom: 50px;
     }
+
+    #sectionone_indhold {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+
+    #firstux_section {
+        font-family: 'Jura';
+        text-align: center;
+    }
+
+    #secondux_section {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        padding-top: 20px;
+        margin: 3rem;
+        grid-gap: 2rem;
+    }
+
+    #thirdux_section {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        margin: 3rem;
+        grid-gap: 2rem;
+    }
+
+    #firstani_section {
+        font-family: 'Jura';
+        text-align: center;
+    }
+
+    #secondani_section {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 2fr 2fr 2fr;
+        padding-top: 20px;
+        margin: 4rem;
+    }
+
 }
 
 /*
