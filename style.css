@@ -23,9 +23,23 @@ h1 {
     z-index: 2;
 }
 
+#uxoverskrift,
+#animationoverskrift,
+#weboverskrift,
+#gioverskrift {
+    padding-top: 9rem;
+    padding-bottom: 2rem;
+}
+
+
 p {
-    color: white;
+    color: orange;
     margin: 70px;
+    font-family: 'Abel';
+}
+
+h3 {
+    text-align: center;
 }
 
 #first_sectionlanding a {
@@ -355,18 +369,11 @@ h2 {
 
     #secondux_section {
         display: grid;
-        grid-template-columns: 2fr 2fr 2fr 2fr;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 2fr 2fr;
         padding-top: 20px;
-        margin: 3rem;
-        grid-gap: 2rem;
     }
 
-    #thirdux_section {
-        display: grid;
-        grid-template-columns: 2fr 2fr 2fr 2fr;
-        margin: 3rem;
-        grid-gap: 2rem;
-    }
 
     #firstani_section {
         font-family: 'Jura';
@@ -378,7 +385,11 @@ h2 {
         grid-template-columns: 2fr 2fr;
         grid-template-rows: 2fr 2fr 2fr;
         padding-top: 20px;
-        margin: 4rem;
+    }
+
+    #firstweb_section {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
     }
 
 }
