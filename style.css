@@ -2,12 +2,19 @@
     margin: 0px;
 }
 
-img {
+#image {
     width: 100%
 }
 
-/*landingpage*/
+/*landingpage/overskrifte */
 
+.pil {
+    cursor: pointer;
+    text-align: left;
+    font-size: 2rem;
+    color: #E3C6B8;
+    /*color: #FDD882;*/
+}
 
 article {
     font-family: 'Jura';
@@ -21,6 +28,14 @@ h1 {
     color: #d158c3;
     text-align: center;
     z-index: 2;
+}
+
+h2 {
+    font-family: 'Josefin Sans';
+    font-size: 3rem;
+    color: #242B26;
+    text-align: center;
+    padding-top: 90px;
 }
 
 #uxoverskrift,
@@ -40,6 +55,9 @@ p {
 
 h3 {
     text-align: center;
+    font-family: 'Jura';
+    text-align: center;
+    padding-top: 20px;
 }
 
 #first_sectionlanding a {
@@ -212,14 +230,6 @@ nav a {
     height: 2vw;
 }
 
-h2 {
-    font-family: 'Josefin Sans';
-    font-size: 3rem;
-    color: #242B26;
-    text-align: center;
-    padding-top: 90px;
-}
-
 #secondsection_julie {
     background: #708776;
 }
@@ -231,6 +241,105 @@ h2 {
     padding-top: 80px;
     padding-bottom: 50px;
 }
+
+/* Animatinos galleri */
+
+#image1,
+#image2,
+#image3,
+#image4,
+#image5,
+#image6,
+#image7,
+#image8 {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+#galleri {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1fr;
+    position: relative;
+}
+
+.imgSlide {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+/* image controls*/
+#imageControls {
+    margin: 10px 0px 30px 0px;
+    display: flex;
+    grid-gap: 12px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*dot indikator*/
+.dot {
+    flex-shrink: 0;
+    width: 0.6em;
+    height: 0.6em;
+
+    background: rgba(190, 178, 169, 0.39);
+    border-radius: 20px;
+
+}
+
+.activeDot {
+    background: rgba(190, 178, 169, 0.89);
+}
+
+/*button*/
+.button {
+    width: 25px;
+    height: 25px;
+    border-radius: 4px;
+
+    background: rgba(190, 178, 169, 0.40);
+    color: rgba(0, 0, 0, 0.40);
+
+
+    font-size: 1.3em;
+    cursor: pointer;
+
+}
+
+.button:hover {
+    background: rgba(190, 178, 169, 0.90);
+    color: rgba(0, 0, 0, 0.50);
+
+}
+
+/*button placement*/
+#next_button {
+    margin-left: 360px;
+    padding: 0px 2px 0px 4px;
+}
+
+#prev_button {
+    margin-right: 370px;
+
+    padding: 0px 4px 0px 2px;
+}
+
+/*description text*/
+/*
+.row p {
+    text-align: justify-all;
+    margin: 15px;
+}
+*/
+
+/*for hiding images*/
+.gem {
+    display: none;
+}
+
 
 @media (min-width:600px) {
 
@@ -357,39 +466,56 @@ h2 {
         padding-bottom: 50px;
     }
 
-    #sectionone_indhold {
+    #secondgi_section {
         display: grid;
         grid-template-columns: 2fr 2fr;
+        gap: 2rem;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
-    #firstux_section {
+    #thirdgi_section {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        padding-top: 50px;
+    }
+
+    .video {
+        padding-left: 6rem;
+    }
+
+    #firstux_section,
+    #firstani_section,
+    #firstweb_section,
+    #firstgi_section {
         font-family: 'Jura';
         text-align: center;
     }
 
     #secondux_section {
         display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #thirdux_section {
+        display: grid;
         grid-template-columns: 2fr 2fr;
-        grid-template-rows: 2fr 2fr;
+        grid-template-rows: 1fr 1fr;
         padding-top: 20px;
     }
 
 
-    #firstani_section {
-        font-family: 'Jura';
-        text-align: center;
-    }
-
-    #secondani_section {
+    #thirdani_section {
         display: grid;
         grid-template-columns: 2fr 2fr;
         grid-template-rows: 2fr 2fr 2fr;
         padding-top: 20px;
     }
 
-    #firstweb_section {
+    #secondweb_section {
         display: grid;
         grid-template-columns: 2fr 2fr;
+        padding-top: 20px;
     }
 
 }
