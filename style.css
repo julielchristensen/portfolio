@@ -230,10 +230,6 @@ nav a {
     height: 2vw;
 }
 
-#secondsection_julie {
-    background: #708776;
-}
-
 #secondsection_julie .section_wrapper {
     display: grid;
     grid-template-rows: 2fr 2fr;
@@ -242,7 +238,7 @@ nav a {
     padding-bottom: 50px;
 }
 
-/* Animatinos galleri */
+/* Galleri */
 
 #image1,
 #image2,
@@ -252,9 +248,9 @@ nav a {
 #image6,
 #image7,
 #image8 {
+    margin-left: auto;
+    margin-right: auto;
     width: 50%;
-    align-items: center;
-    justify-content: center;
 }
 
 #galleri {
@@ -326,14 +322,6 @@ nav a {
 
     padding: 0px 4px 0px 2px;
 }
-
-/*description text*/
-/*
-.row p {
-    text-align: justify-all;
-    margin: 15px;
-}
-*/
 
 /*for hiding images*/
 .gem {
@@ -454,10 +442,6 @@ nav a {
         text-transform: uppercase;
     }
 
-    #secondsection_julie {
-        background: #708776;
-    }
-
     #secondsection_julie .section_wrapper {
         display: grid;
         grid-template-columns: 2fr 2fr;
@@ -492,18 +476,12 @@ nav a {
         text-align: center;
     }
 
-    #secondux_section {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
     #thirdux_section {
         display: grid;
         grid-template-columns: 2fr 2fr;
         grid-template-rows: 1fr 1fr;
         padding-top: 20px;
     }
-
 
     #thirdani_section {
         display: grid;

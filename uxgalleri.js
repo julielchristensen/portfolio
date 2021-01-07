@@ -12,10 +12,6 @@ newImg = 0; //the upcoming images number
 document.querySelector("#image2").classList.add("gem");
 document.querySelector("#image3").classList.add("gem");
 document.querySelector("#image4").classList.add("gem");
-document.querySelector("#image5").classList.add("gem");
-document.querySelector("#image6").classList.add("gem");
-document.querySelector("#image7").classList.add("gem");
-document.querySelector("#image8").classList.add("gem");
 
 document.querySelector("#next_button").addEventListener("click", nextImage);
 document.querySelector("#prev_button").addEventListener("click", prevImage);
@@ -26,26 +22,26 @@ function nextImage() {
     //remove eventlisteners
     document.querySelector("#next_button").removeEventListener("click", nextImage);
     //if conditions that make sure the curimg value and newimg value stays in the range 1-4.
-    if (curImg < 8) {
-        console.log("if current is less than 8, new is current + 1");
+    if (curImg < 4) {
+        console.log("if current is less than 4, new is current + 1");
         //gives newimg a value that is 1 more than current
         newImg = curImg + 1;
     }
 
-    if (curImg == 8) {
-        console.log("if current is 8, new is 1");
+    if (curImg == 4) {
+        console.log("if current is 4, new is 1");
         //document.getElementById("next_button").classList.add("noclickbutton");
         newImg = 1;
     }
-    if (curImg > 8) {
-        console.log("if current is more than 8, current is 1");
+    if (curImg > 4) {
+        console.log("if current is more than 4, current is 1");
         //document.getElementById("next_button").classList.add("noclickbutton");
         curImg = 1;
     }
     if (curImg == 0) {
-        console.log("if current is 0, current is 8");
+        console.log("if current is 0, current is 4");
         //document.getElementById("prev_button").classList.add("noclickbutton");
-        curImg = 8;
+        curImg = 4;
     }
 
 
@@ -65,8 +61,8 @@ function nextImage() {
     newImg++;
 
     document.querySelector("#next_button").addEventListener("click", nextImage);
-}
 
+}
 
 function prevImage() {
     //remove eventlistener
@@ -80,23 +76,21 @@ function prevImage() {
     }
 
     if (curImg == 1) {
-        console.log("if current is 1, new is 8");
+        console.log("if current is 1, new is 4");
         //document.getElementById("prev_button").classList.add("noclickbutton");
-        newImg = 8;
+        newImg = 4;
     }
 
     if (curImg == 0) {
-        console.log("if current is 0, current is 8");
+        console.log("if current is 0, current is 4");
         //document.getElementById("prev_button").classList.add("noclickbutton");
-        curImg = 8;
+        curImg = 4;
     }
-    if (curImg > 8) {
-        console.log("if curent is more than 8, current is 1");
+    if (curImg > 4) {
+        console.log("if curent is more than 4, current is 1");
         //document.getElementById("next_button").classList.add("noclickbutton");
         curImg = 1;
     }
-
-
 
     //prints value of current and new img to console
     console.log("prev image function" + " image before was: " + curImg + " new image is: " + newImg);
@@ -114,3 +108,4 @@ function prevImage() {
 
     //adds  eventlistener again
     document.querySelector("#prev_button").addEventListener("click", prevImage);
+}
