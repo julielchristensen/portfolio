@@ -25,7 +25,7 @@ article {
 h1 {
     font-family: 'Josefin Sans';
     font-size: 2rem;
-    color: #d158c3;
+    color: white;
     text-align: center;
     z-index: 2;
 }
@@ -69,12 +69,14 @@ h3 {
     text-align: center;
     padding-bottom: 20px;
     text-decoration: none;
+    color: black;
+    padding-bottom: 2rem;
 }
 
 #first_sectionlanding {
     width: 100%;
     height: 100vh;
-    background-image: url(baggrundforside-100.jpg);
+    background-image: url(watercolor.png);
     background-size: cover;
     background-position: center;
     background-position: 49%;
@@ -116,9 +118,9 @@ nav ul {
     position: absolute;
     z-index: 1;
     padding-left: 0;
-    background-image: url(menu.jpg);
-    width: 110%;
-    height: 70vh;
+    background-image: url(inspo.jpg);
+    width: 103%;
+    height: 80vh;
     margin-top: 1vh;
 }
 
@@ -127,7 +129,7 @@ a {
     padding: 1rem;
     font-family: 'Jura';
     border-right-style: none;
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -308,6 +310,7 @@ a {
 
     font-size: 1.3em;
     cursor: pointer;
+    z-index: 1;
 
 }
 
@@ -451,7 +454,7 @@ a {
 
     a {
         text-decoration: none;
-        color: black;
+        color: #551516;
         font-size: 17px;
         font-weight: 400;
         text-transform: uppercase;
@@ -501,7 +504,6 @@ a {
     #thirdani_section {
         display: grid;
         grid-template-columns: 2fr 2fr;
-        grid-template-rows: 2fr 2fr 2fr;
         padding-top: 20px;
     }
 

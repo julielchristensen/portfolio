@@ -30,17 +30,14 @@ function nextImage() {
 
     if (curImg == 4) {
         console.log("if current is 4, new is 1");
-        //document.getElementById("next_button").classList.add("noclickbutton");
         newImg = 1;
     }
     if (curImg > 4) {
         console.log("if current is more than 4, current is 1");
-        //document.getElementById("next_button").classList.add("noclickbutton");
         curImg = 1;
     }
     if (curImg == 0) {
         console.log("if current is 0, current is 4");
-        //document.getElementById("prev_button").classList.add("noclickbutton");
         curImg = 4;
     }
 
@@ -77,18 +74,15 @@ function prevImage() {
 
     if (curImg == 1) {
         console.log("if current is 1, new is 4");
-        //document.getElementById("prev_button").classList.add("noclickbutton");
         newImg = 4;
     }
 
     if (curImg == 0) {
         console.log("if current is 0, current is 4");
-        //document.getElementById("prev_button").classList.add("noclickbutton");
         curImg = 4;
     }
     if (curImg > 4) {
         console.log("if curent is more than 4, current is 1");
-        //document.getElementById("next_button").classList.add("noclickbutton");
         curImg = 1;
     }
 

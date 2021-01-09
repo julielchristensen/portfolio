@@ -25,7 +25,7 @@ document.querySelector("#prev_button").addEventListener("click", prevImage);
 function nextImage() {
     //remove eventlisteners
     document.querySelector("#next_button").removeEventListener("click", nextImage);
-    //if conditions that make sure the curimg value and newimg value stays in the range 1-4.
+    //if conditions that make sure the curimg value and newimg value stays in the range 1-8.
     if (curImg < 8) {
         console.log("if current is less than 8, new is current + 1");
         //gives newimg a value that is 1 more than current
@@ -34,17 +34,14 @@ function nextImage() {
 
     if (curImg == 8) {
         console.log("if current is 8, new is 1");
-        //document.getElementById("next_button").classList.add("noclickbutton");
         newImg = 1;
     }
     if (curImg > 8) {
         console.log("if current is more than 8, current is 1");
-        //document.getElementById("next_button").classList.add("noclickbutton");
         curImg = 1;
     }
     if (curImg == 0) {
         console.log("if current is 0, current is 8");
-        //document.getElementById("prev_button").classList.add("noclickbutton");
         curImg = 8;
     }
 
@@ -81,18 +78,15 @@ function prevImage() {
 
     if (curImg == 1) {
         console.log("if current is 1, new is 8");
-        //document.getElementById("prev_button").classList.add("noclickbutton");
         newImg = 8;
     }
 
     if (curImg == 0) {
         console.log("if current is 0, current is 8");
-        //document.getElementById("prev_button").classList.add("noclickbutton");
         curImg = 8;
     }
     if (curImg > 8) {
         console.log("if curent is more than 8, current is 1");
-        //document.getElementById("next_button").classList.add("noclickbutton");
         curImg = 1;
     }
 
