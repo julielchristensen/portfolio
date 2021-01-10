@@ -2,6 +2,12 @@
     margin: 0px;
 }
 
+/*
+main {
+    margin: 40px;
+}
+*/
+
 #image {
     width: 100%
 }
@@ -48,8 +54,8 @@ h2 {
 
 
 p {
-    color: orange;
-    margin: 70px;
+    color: #B59F82;
+    margin: 40px;
     font-family: 'Abel';
     line-height: 2;
 }
@@ -64,7 +70,8 @@ h3 {
 #firstux_section,
 #firstani_section,
 #firstweb_section,
-#firstgi_section a {
+#firstgi_section,
+a {
     font-family: 'Jura';
     text-align: center;
     padding-bottom: 20px;
@@ -120,8 +127,12 @@ nav ul {
     padding-left: 0;
     background-image: url(inspo.jpg);
     width: 103%;
-    height: 80vh;
+    height: 68vh;
     margin-top: 1vh;
+}
+
+#link {
+    color: black;
 }
 
 a {
@@ -139,7 +150,7 @@ a {
 
 #menuknap {
     cursor: pointer;
-    padding-top: 60px;
+    padding-top: 20px;
     padding-left: 85vw;
 }
 
@@ -236,14 +247,6 @@ a {
     background-size: cover;
     width: 2vw;
     height: 2vw;
-}
-
-#secondsection_julie .section_wrapper {
-    display: grid;
-    grid-template-rows: 2fr 2fr;
-    /*    grid-gap: 2rem;*/
-    padding-top: 80px;
-    padding-bottom: 50px;
 }
 
 /* Galleri */
@@ -354,71 +357,6 @@ a {
 
     /*elementer*/
 
-    #planet1_container {
-        position: absolute;
-        top: 4vw;
-        left: 4vw;
-    }
-
-    #planet1_sprite {
-        background-image: url(Forside_elementer/gronplanet.svg);
-        background-size: cover;
-        width: 9vw;
-        height: 9vw;
-    }
-
-    #planet2_container {
-        position: absolute;
-        top: 32vw;
-        left: 82vw;
-    }
-
-    #planet2_sprite {
-        background-image: url(Forside_elementer/orangeplanet.svg);
-        background-size: cover;
-        width: 6vw;
-        height: 6vw;
-    }
-
-    #stjerne_container {
-        position: absolute;
-        top: 14vw;
-        left: 74vw;
-    }
-
-    #stjerne_sprite {
-        background-image: url(Forside_elementer/stjerne.svg);
-        background-size: cover;
-        width: 2vw;
-        height: 2vw;
-    }
-
-    #stjerne2_container {
-        position: absolute;
-        top: 13vw;
-        left: 28vw;
-    }
-
-    #stjerne2_sprite {
-        background-image: url(Forside_elementer/stjerne.svg);
-        background-size: cover;
-        width: 2vw;
-        height: 2vw;
-    }
-
-    #draabe_container {
-        position: absolute;
-        top: 48vw;
-        left: 21vw;
-    }
-
-    #draabe_sprite {
-        background-image: url(Forside_elementer/draabe.svg);
-        background-size: cover;
-        width: 2vw;
-        height: 2vw;
-    }
-
     nav ul {
         position: relative;
         padding-left: 0;
@@ -429,7 +367,7 @@ a {
     }
 
     nav {
-        margin: 20px;
+        /*        margin: 20px;*/
         padding-left: 55px;
     }
 
@@ -505,6 +443,10 @@ a {
         display: grid;
         grid-template-columns: 2fr 2fr;
         padding-top: 20px;
+    }
+
+    #thirdani_section img {
+        padding-top: 1rem;
     }
 
     #secondweb_section {
