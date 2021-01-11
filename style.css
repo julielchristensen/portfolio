@@ -39,17 +39,19 @@ h1 {
 h2 {
     font-family: 'Josefin Sans';
     font-size: 3rem;
-    color: #242B26;
+    color: white;
     text-align: center;
-    padding-top: 90px;
+    background-image: url(ommig.png);
+    background-size: cover;
 }
 
 #uxoverskrift,
 #animationoverskrift,
 #weboverskrift,
-#gioverskrift {
-    padding-top: 9rem;
-    padding-bottom: 2rem;
+#gioverskrift,
+#ommigoverskrift {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
 }
 
 
@@ -65,6 +67,7 @@ h3 {
     font-family: 'Jura';
     text-align: center;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #firstux_section,
@@ -77,7 +80,10 @@ a {
     padding-bottom: 20px;
     text-decoration: none;
     color: black;
+    padding-top: 2rem;
     padding-bottom: 2rem;
+    z-index: 4;
+    cursor: pointer;
 }
 
 #first_sectionlanding {
@@ -86,7 +92,7 @@ a {
     background-image: url(watercolor.png);
     background-size: cover;
     background-position: center;
-    background-position: 49%;
+    background-position: 4%;
 }
 
 #first_sectionlanding {
@@ -398,11 +404,18 @@ a {
         text-transform: uppercase;
     }
 
+    #secondsection_julie .billeder {
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr;
+        ;
+        grid-template-rows: 1fr 1fr;
+    }
+
     #secondsection_julie .section_wrapper {
         display: grid;
         grid-template-columns: 2fr 2fr;
-        /*    grid-gap: 2rem;*/
-        padding-top: 80px;
+        grid-gap: 2rem;
+        padding-top: 5rem;
         padding-bottom: 50px;
     }
 
@@ -420,8 +433,17 @@ a {
         padding-top: 50px;
     }
 
+    .gitext {
+        padding-left: 2rem;
+    }
+
     .video {
-        padding-left: 6rem;
+        padding-top: 1rem;
+        padding-left: 3rem;
+    }
+
+    #gibilleder {
+        padding-top: 4rem;
     }
 
     #firstux_section,
@@ -449,6 +471,11 @@ a {
         padding-top: 1rem;
     }
 
+    #fourthgi_section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
     #secondweb_section {
         display: grid;
         grid-template-columns: 2fr 2fr;
@@ -462,10 +489,28 @@ a {
     #image5,
     #image6,
     #image7,
-    #image8 {
+    #image8,
+    #image9,
+    #image10,
+    #image11 {
         margin-left: auto;
         margin-right: auto;
         width: 60%;
+    }
+
+    .juliebillede1 {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    .juliebillede2 {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .juliebillede3 {
+        grid-row: 3;
+        grid-column: 2;
     }
 
 }
