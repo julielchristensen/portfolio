@@ -2,10 +2,11 @@
     margin: 0px;
 }
 
+/*
 main {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 20px;
 }
+*/
 
 #image {
     width: 100%
@@ -40,7 +41,7 @@ h2 {
     font-size: 3rem;
     color: #63485B;
     text-align: center;
-    padding-top: 5rem;
+    padding-top: 6rem;
     padding-bottom: 2rem;
     background-image: url(menu2.png);
     background-position: left;
@@ -64,13 +65,8 @@ h3 {
 #firstux_section,
 #firstani_section,
 #firstweb_section,
-#firstgi_section,
-a {
-    font-family: 'Jura';
+#firstgi_section {
     text-align: center;
-    padding-bottom: 20px;
-    text-decoration: none;
-    color: blue;
     padding-top: 2rem;
     padding-bottom: 2rem;
     z-index: 4;
@@ -152,7 +148,7 @@ a {
     padding: 1rem;
     font-family: 'Jura';
     border-right-style: none;
-    color: white;
+    color: #7E5755;
     text-decoration: none;
 }
 
@@ -357,8 +353,6 @@ a {
         display: grid;
         grid-template-rows: 2fr;
         grid-gap: 2rem;
-        padding-top: 5rem;
-        padding-bottom: 50px;
     }
 
     #secondgi_section {
@@ -381,6 +375,10 @@ a {
 
     #gibilleder {
         padding-top: 4rem;
+    }
+
+    .video {
+        padding-top: 2rem;
     }
 
     /*
@@ -437,9 +435,13 @@ a {
         width: 60%;
     }
 
+    .om_mig {
+        padding
+    }
+
     .billeder {
         padding-top: 3rem;
-        padding-left: 20rem;
+        padding-left: 17rem;
     }
 
     #image15 {
@@ -458,9 +460,3 @@ a {
     }
 
 }
-
-/*
-nav a:hover {
-    color: #E3C6B8;
-}
-*/
