@@ -2,14 +2,9 @@
     margin: 0px;
 }
 
-/*
-main {
-    margin: 20px;
-}
-*/
-
 #image {
-    width: 100%
+    width: 100%;
+    padding-top: 40px;
 }
 
 /*landingpage/overskrifte */
@@ -22,15 +17,15 @@ main {
     /*color: #FDD882;*/
 }
 
-article {
+#forsidetekst {
     font-family: 'Raleway';
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 h1 {
     font-family: 'Josefin Sans';
-    font-size: 2rem;
+    font-size: 3rem;
     color: white;
     text-align: center;
     z-index: 2;
@@ -56,10 +51,12 @@ p {
 
 h3 {
     text-align: center;
-    font-family: 'Jura';
+    font-family: 'Lato';
     text-align: center;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    color: #CCA391;
+    font-size: 1.5rem;
 }
 
 #firstux_section,
@@ -107,7 +104,6 @@ h3 {
 }
 
 
-
 /* forside*/
 
 /* Navigation */
@@ -140,7 +136,7 @@ nav ul {
 }
 
 #link {
-    color: black;
+    color: #7E5755;
 }
 
 a {
@@ -167,7 +163,7 @@ a {
 .bar3 {
     width: 40px;
     height: 2px;
-    background-color: black;
+    background-color: #7E5755;
     margin: 10px;
     transition: 0.4s;
 }
@@ -208,7 +204,6 @@ a {
 #galleri {
     display: grid;
     grid-template-columns: 1fr;
-    grid-row: 1fr;
     position: relative;
 }
 
@@ -284,19 +279,15 @@ a {
 
 @media (min-width:600px) {
 
+    /*forside*/
     h1 {
         font-size: 4rem;
         text-align: center;
     }
 
-    /*forside*/
-
-    #forside {
-        color: white;
-        text-align: center;
+    #forsidetekst {
+        font-size: 2rem;
     }
-
-    /*elementer*/
 
     nav ul {
         position: relative;
@@ -307,13 +298,7 @@ a {
     }
 
     nav {
-        /*        margin: 20px;*/
         padding-left: 60px;
-        /*
-             background-image: url(ommig.png);
-        background-size: cover;
-        background-position: right;
-*/
     }
 
     #menuknap {
@@ -381,16 +366,6 @@ a {
         padding-top: 2rem;
     }
 
-    /*
-    #firstux_section,
-    #firstani_section,
-    #firstweb_section,
-    #firstgi_section {
-        font-family: 'Jura';
-        text-align: center;
-    }
-*/
-
     #thirdux_section {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -433,10 +408,6 @@ a {
         margin-left: auto;
         margin-right: auto;
         width: 60%;
-    }
-
-    .om_mig {
-        padding
     }
 
     .billeder {
