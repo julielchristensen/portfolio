@@ -2,11 +2,10 @@
     margin: 0px;
 }
 
-/*
 main {
-    margin: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
-*/
 
 #image {
     width: 100%
@@ -23,7 +22,7 @@ main {
 }
 
 article {
-    font-family: 'Jura';
+    font-family: 'Raleway';
     color: white;
     font-size: 2rem;
 }
@@ -37,28 +36,20 @@ h1 {
 }
 
 h2 {
-    font-family: 'Josefin Sans';
+    font-family: 'Mulish';
     font-size: 3rem;
-    color: white;
+    color: #63485B;
     text-align: center;
-    background-image: url(ommig.png);
-    background-size: cover;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    background-image: url(menu2.png);
+    background-position: left;
 }
-
-#uxoverskrift,
-#animationoverskrift,
-#weboverskrift,
-#gioverskrift,
-#ommigoverskrift {
-    padding-top: 6rem;
-    padding-bottom: 3rem;
-}
-
 
 p {
-    color: #B59F82;
+    color: black;
     margin: 40px;
-    font-family: 'Abel';
+    font-family: 'Raleway';
     line-height: 2;
 }
 
@@ -79,7 +70,7 @@ a {
     text-align: center;
     padding-bottom: 20px;
     text-decoration: none;
-    color: black;
+    color: blue;
     padding-top: 2rem;
     padding-bottom: 2rem;
     z-index: 4;
@@ -108,6 +99,19 @@ a {
     text-align: center;
 }
 
+.billeder {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    padding-left: 2rem;
+}
+
+#image15 {
+    width: 90%;
+    border-radius: 100px;
+}
+
+
+
 /* forside*/
 
 /* Navigation */
@@ -131,9 +135,11 @@ nav ul {
     position: absolute;
     z-index: 1;
     padding-left: 0;
-    background-image: url(inspo.jpg);
+    background-image: url(menu2.png);
+    background-size: cover;
+    background-position: right;
     width: 103%;
-    height: 68vh;
+    height: 65vh;
     margin-top: 1vh;
 }
 
@@ -186,73 +192,6 @@ a {
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
-}
-
-/*elementer*/
-
-#planet1_container {
-    position: absolute;
-    top: 7vw;
-    left: 7vw;
-}
-
-#planet1_sprite {
-    background-image: url(Forside_elementer/gronplanet.svg);
-    background-size: cover;
-    width: 20vw;
-    height: 20vw;
-}
-
-#planet2_container {
-    position: absolute;
-    top: 84vw;
-    left: 82vw;
-}
-
-#planet2_sprite {
-    background-image: url(Forside_elementer/orangeplanet.svg);
-    background-size: cover;
-    width: 15vw;
-    height: 15vw;
-}
-
-#stjerne_container {
-    position: absolute;
-    top: 44vw;
-    left: 74vw;
-}
-
-#stjerne_sprite {
-    background-image: url(Forside_elementer/stjerne.svg);
-    background-size: cover;
-    width: 4vw;
-    height: 4vw;
-}
-
-#stjerne2_container {
-    position: absolute;
-    top: 107vw;
-    left: 15vw;
-}
-
-#stjerne2_sprite {
-    background-image: url(Forside_elementer/stjerne.svg);
-    background-size: cover;
-    width: 2vw;
-    height: 2vw;
-}
-
-#draabe_container {
-    position: absolute;
-    top: 104vw;
-    left: 18vw;
-}
-
-#draabe_sprite {
-    background-image: url(Forside_elementer/draabe.svg);
-    background-size: cover;
-    width: 2vw;
-    height: 2vw;
 }
 
 /* Galleri */
@@ -365,16 +304,20 @@ a {
 
     nav ul {
         position: relative;
-        padding-left: 0;
         background: none;
-        height: 2rem;
-        width: 100%;
+        height: 5rem;
+        width: 86.5rem;
         margin: 0;
     }
 
     nav {
         /*        margin: 20px;*/
-        padding-left: 55px;
+        padding-left: 60px;
+        /*
+             background-image: url(ommig.png);
+        background-size: cover;
+        background-position: right;
+*/
     }
 
     #menuknap {
@@ -398,7 +341,7 @@ a {
 
     a {
         text-decoration: none;
-        color: #551516;
+        color: #7E5755;
         font-size: 17px;
         font-weight: 400;
         text-transform: uppercase;
@@ -406,14 +349,13 @@ a {
 
     #secondsection_julie .billeder {
         display: grid;
-        grid-template-columns: 2fr 2fr 1fr;
-        ;
+        grid-template-columns: 2fr 2fr;
         grid-template-rows: 1fr 1fr;
     }
 
-    #secondsection_julie .section_wrapper {
+    #secondsection_julie {
         display: grid;
-        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 2fr;
         grid-gap: 2rem;
         padding-top: 5rem;
         padding-bottom: 50px;
@@ -421,7 +363,7 @@ a {
 
     #secondgi_section {
         display: grid;
-        grid-template-columns: 2fr 2fr;
+        grid-template-columns: 1fr 1fr;
         gap: 2rem;
         padding-top: 40px;
         padding-bottom: 40px;
@@ -437,15 +379,11 @@ a {
         padding-left: 2rem;
     }
 
-    .video {
-        padding-top: 1rem;
-        padding-left: 3rem;
-    }
-
     #gibilleder {
         padding-top: 4rem;
     }
 
+    /*
     #firstux_section,
     #firstani_section,
     #firstweb_section,
@@ -453,10 +391,11 @@ a {
         font-family: 'Jura';
         text-align: center;
     }
+*/
 
     #thirdux_section {
         display: grid;
-        grid-template-columns: 2fr 2fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         padding-top: 20px;
     }
@@ -498,19 +437,24 @@ a {
         width: 60%;
     }
 
+    .billeder {
+        padding-top: 3rem;
+        padding-left: 20rem;
+    }
+
+    #image15 {
+        width: 50%;
+        border-radius: 100px;
+    }
+
     .juliebillede1 {
         grid-row: 1;
         grid-column: 2;
     }
 
     .juliebillede2 {
-        grid-row: 2;
+        grid-row: 1;
         grid-column: 1;
-    }
-
-    .juliebillede3 {
-        grid-row: 3;
-        grid-column: 2;
     }
 
 }
